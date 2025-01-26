@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    docker { image 'hashicorp/terraform:1.10' }
+    docker { image 'ubuntu' }
   }
   stages {
     stage('Test') {
       steps {
-        sh 'plan'
+        sh 'apt-get update'
       }
     }
   }
