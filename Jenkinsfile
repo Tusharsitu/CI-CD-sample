@@ -11,7 +11,8 @@ pipeline {
           unzip terraform.zip
           mv terraform /usr/local/bin/
           chmod +x /usr/local/bin/terraform
-          terraform --version 
+          terraform --version
+          '''
       }
     }
   }
