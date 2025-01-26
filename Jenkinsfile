@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    docker { image 'node:16-alpine' }
+    docker { image 'hashicorp/terraform:1.10' }
   }
   stages {
     stage('Test') {
       steps {
-        sh 'node --version'
+        sh 'terraform --version'
       }
     }
   }
