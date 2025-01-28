@@ -7,6 +7,7 @@ pipeline {
       steps {
         sh '''
          terraform --version
+        terraform plan
           '''
       }
     }
