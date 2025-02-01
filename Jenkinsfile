@@ -7,6 +7,7 @@ pipeline {
       steps {
       checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-auth', url: 'https://github.com/Tusharsitu/CI-CD-sample.git']])
     }
+    }
     stage('Test') {
       steps {
         sh '''
