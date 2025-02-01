@@ -13,6 +13,7 @@ pipeline {
          ls -l CI-CD-sample
          terraform --version
          terraform init
+         echo test
           '''
       }
     }
